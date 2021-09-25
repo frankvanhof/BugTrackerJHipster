@@ -97,6 +97,12 @@
             </a>
           </li>
           <!-- jhipster-needle-add-element-to-admin-menu - JHipster will add entities to the admin menu here -->
+          <li *ngIf="!inProduction">
+            <a class="dropdown-item" href=" http://localhost:8092/ " target="_tab" (click)="collapseNavbar()">
+              <fa-icon icon="database" [fixedWidth]="true"></fa-icon>
+              <span>Database</span>
+            </a>
+          </li>
         </ul>
       </li>
       <li

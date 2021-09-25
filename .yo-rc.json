@@ -24,7 +24,7 @@
     "cacheProvider": "no",
     "enableHibernateCache": false,
     "databaseType": "sql",
-    "devDatabaseType": "mysql",
+    "devDatabaseType": "h2Disk",
     "prodDatabaseType": "mysql",
     "buildTool": "maven",
     "serverSideOptions": [],
