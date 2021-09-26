@@ -1,0 +1,30 @@
+
+entity Project {
+	name String minlength(3)
+}
+
+entity Label {
+	label String minlength(3)
+}
+
+
+entity Ticket {
+	title String,
+	description String,
+    dueDate LocalDate,
+	done Boolean
+}
+
+
+relationship ManyToMany {
+    Ticket{label(label)} to Label{ticket}
+}
+
+relationship ManyToOne {
+    Ticket{project(name)} to Project,
+    Ticket{assignedTo(login)} to User{ticket}
+}
+// Set pagination options 
+paginate Ticket with pagination
+
+

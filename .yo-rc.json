@@ -43,6 +43,8 @@
     "clientThemeVariant": "",
     "enableGradleEnterprise": false,
     "languages": ["en", "fr"],
-    "cypressCoverage": true
+    "cypressCoverage": true,
+    "entities": ["Project", "Label", "Ticket"],
+    "lastLiquibaseTimestamp": 1632662006000
   }
 }
